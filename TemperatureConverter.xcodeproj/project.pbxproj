@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C26BFDB22D75E7FB009CD4A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26BFDAC2D75E7FB009CD4A2 /* Preview Assets.xcassets */; };
+		C26BFDB32D75E7FB009CD4A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26BFDAE2D75E7FB009CD4A2 /* Assets.xcassets */; };
+		C26BFDB42D75E7FB009CD4A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDAF2D75E7FB009CD4A2 /* ContentView.swift */; };
+		C26BFDB52D75E7FB009CD4A2 /* TemperatureConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDB02D75E7FB009CD4A2 /* TemperatureConverterApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C26BFD972D75E7B6009CD4A2 /* TemperatureConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26BFDAC2D75E7FB009CD4A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C26BFDAE2D75E7FB009CD4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C26BFDAF2D75E7FB009CD4A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C26BFDB02D75E7FB009CD4A2 /* TemperatureConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverterApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C26BFD992D75E7B6009CD4A2 /* TemperatureConverter */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TemperatureConverter;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C26BFD942D75E7B6009CD4A2 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		C26BFD8E2D75E7B6009CD4A2 = {
 			isa = PBXGroup;
 			children = (
-				C26BFD992D75E7B6009CD4A2 /* TemperatureConverter */,
+				C26BFDB12D75E7FB009CD4A2 /* TemperatureConverter */,
 				C26BFD982D75E7B6009CD4A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,49 @@
 				C26BFD972D75E7B6009CD4A2 /* TemperatureConverter.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C26BFDAA2D75E7FB009CD4A2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C26BFDAB2D75E7FB009CD4A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C26BFDAD2D75E7FB009CD4A2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFDB02D75E7FB009CD4A2 /* TemperatureConverterApp.swift */,
+				C26BFDAE2D75E7FB009CD4A2 /* Assets.xcassets */,
+				C26BFDAC2D75E7FB009CD4A2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C26BFDB12D75E7FB009CD4A2 /* TemperatureConverter */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFDAB2D75E7FB009CD4A2 /* Models */,
+				C26BFDAA2D75E7FB009CD4A2 /* ViewModels */,
+				C26BFDB62D75E800009CD4A2 /* Views */,
+				C26BFDAD2D75E7FB009CD4A2 /* Preview Content */,
+			);
+			path = TemperatureConverter;
+			sourceTree = "<group>";
+		};
+		C26BFDB62D75E800009CD4A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFDAF2D75E7FB009CD4A2 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +105,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C26BFD992D75E7B6009CD4A2 /* TemperatureConverter */,
 			);
 			name = TemperatureConverter;
 			packageProductDependencies = (
@@ -109,6 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26BFDB22D75E7FB009CD4A2 /* Preview Assets.xcassets in Resources */,
+				C26BFDB32D75E7FB009CD4A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26BFDB42D75E7FB009CD4A2 /* ContentView.swift in Sources */,
+				C26BFDB52D75E7FB009CD4A2 /* TemperatureConverterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
