@@ -9,16 +9,22 @@
 /* Begin PBXBuildFile section */
 		C26BFDB22D75E7FB009CD4A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26BFDAC2D75E7FB009CD4A2 /* Preview Assets.xcassets */; };
 		C26BFDB32D75E7FB009CD4A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26BFDAE2D75E7FB009CD4A2 /* Assets.xcassets */; };
-		C26BFDB42D75E7FB009CD4A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDAF2D75E7FB009CD4A2 /* ContentView.swift */; };
+		C26BFDB42D75E7FB009CD4A2 /* FahrenheitToCelsiusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDAF2D75E7FB009CD4A2 /* FahrenheitToCelsiusView.swift */; };
 		C26BFDB52D75E7FB009CD4A2 /* TemperatureConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDB02D75E7FB009CD4A2 /* TemperatureConverterApp.swift */; };
+		C26BFDB82D75E8A9009CD4A2 /* FahrenheitToCelsiusConversionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDB72D75E8A9009CD4A2 /* FahrenheitToCelsiusConversionItemView.swift */; };
+		C26BFDBA2D75E98A009CD4A2 /* FahrenheitToCelsiusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDB92D75E98A009CD4A2 /* FahrenheitToCelsiusViewModel.swift */; };
+		C26BFDBC2D75E9EC009CD4A2 /* FahrenheitToCelsius.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFDBB2D75E9EC009CD4A2 /* FahrenheitToCelsius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C26BFD972D75E7B6009CD4A2 /* TemperatureConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26BFDAC2D75E7FB009CD4A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C26BFDAE2D75E7FB009CD4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C26BFDAF2D75E7FB009CD4A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C26BFDAF2D75E7FB009CD4A2 /* FahrenheitToCelsiusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FahrenheitToCelsiusView.swift; sourceTree = "<group>"; };
 		C26BFDB02D75E7FB009CD4A2 /* TemperatureConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverterApp.swift; sourceTree = "<group>"; };
+		C26BFDB72D75E8A9009CD4A2 /* FahrenheitToCelsiusConversionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FahrenheitToCelsiusConversionItemView.swift; sourceTree = "<group>"; };
+		C26BFDB92D75E98A009CD4A2 /* FahrenheitToCelsiusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FahrenheitToCelsiusViewModel.swift; sourceTree = "<group>"; };
+		C26BFDBB2D75E9EC009CD4A2 /* FahrenheitToCelsius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FahrenheitToCelsius.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		C26BFDAA2D75E7FB009CD4A2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C26BFDB92D75E98A009CD4A2 /* FahrenheitToCelsiusViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -58,6 +65,7 @@
 		C26BFDAB2D75E7FB009CD4A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C26BFDBB2D75E9EC009CD4A2 /* FahrenheitToCelsius.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -86,7 +94,8 @@
 		C26BFDB62D75E800009CD4A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C26BFDAF2D75E7FB009CD4A2 /* ContentView.swift */,
+				C26BFDAF2D75E7FB009CD4A2 /* FahrenheitToCelsiusView.swift */,
+				C26BFDB72D75E8A9009CD4A2 /* FahrenheitToCelsiusConversionItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C26BFDB42D75E7FB009CD4A2 /* ContentView.swift in Sources */,
+				C26BFDBC2D75E9EC009CD4A2 /* FahrenheitToCelsius.swift in Sources */,
+				C26BFDB82D75E8A9009CD4A2 /* FahrenheitToCelsiusConversionItemView.swift in Sources */,
+				C26BFDB42D75E7FB009CD4A2 /* FahrenheitToCelsiusView.swift in Sources */,
+				C26BFDBA2D75E98A009CD4A2 /* FahrenheitToCelsiusViewModel.swift in Sources */,
 				C26BFDB52D75E7FB009CD4A2 /* TemperatureConverterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

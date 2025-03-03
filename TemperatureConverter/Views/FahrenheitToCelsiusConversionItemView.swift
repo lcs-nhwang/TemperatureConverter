@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct FahrenheitToCelsiusConversionItemView: View {
+    
+    // MARK: Stored properties
+    let conversionResult: FahrenheitToCelsius
+    
+    // MARK: Computed properties
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack(spacing: 0) {
+            Text("\(conversionResult.temperatureInFahrenheit.formatted(.number.precision(.significantDigits(1...3)))) °F")
+            
+            Text(" = \(conversionResult.temperatureInCelsius.formatted(.number.precision(.significantDigits(1...3)))) °C")
+        }
+        .font(.largeTitle)
+        
     }
+    
 }
 
 #Preview {
-    FahrenheitToCelsiusConversionItemView()
+    FahrenheitToCelsiusConversionItemView(conversionResult: FahrenheitToCelsius(temperatureInFahrenheit: 32))
 }
